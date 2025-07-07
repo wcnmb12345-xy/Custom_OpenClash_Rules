@@ -12,7 +12,7 @@ echo "# https://github.com/Aethersailor/Custom_OpenClash_Rules #"
 echo "##########################################################"
 sleep 1
 echo "OpenClash dev 一键安装/更新脚本开始运行..."
-echo "即将安装/升级插件和内核至最新 dev 版本，并更新所有数据库、白名单、订阅至最新版"
+echo "即将安装/升级插件和内核至最新 dev 版本"
 sleep 1
 
 # 检测系统使用的包管理器，并设置对应后缀和安装命令
@@ -80,18 +80,6 @@ echo "OpenClash Dev 最新版安装成功！"
 # 清理临时文件
 rm -f "$TEMP_FILE"
 
-# 加载 OpenClash 预设配置（如果存在）
-# 个性化 OpenClash 配置请写入 /etc/config/openclash-set 文件，刷机后运行本脚本会加载对应的设置
-if [ -f /etc/config/openclash-set ]; then
-  echo "检测到个性化预设配置文件，正在加载..."
-  sh /etc/config/openclash-set
-  if [ $? -ne 0 ]; then
-    echo "加载个性化预设配置时出现错误，请检查 /etc/config/openclash-set 内容。"
-    exit 1
-  fi
-  echo "个性化预设配置加载完成！"
-fi
-
 # 执行配置命令
 echo "更新 OpenClash 设置..."
 uci set openclash.config.release_branch=dev
@@ -112,60 +100,6 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 echo "Meta 内核更新完成！"
-
-# 开始更新 GeoIP 数据库
-echo "开始更新 GeoIP Dat 数据库..."
-/usr/share/openclash/openclash_geoip.sh
-if [ $? -ne 0 ]; then
-  echo "GeoIP Dat 数据库更新失败，请检查日志。"
-  exit 1
-fi
-echo "GeoIP Dat 数据库更新完成！"
-
-# 开始更新 IP 数据库
-echo "开始更新 GeoIP MMDB 数据库..."
-/usr/share/openclash/openclash_ipdb.sh
-if [ $? -ne 0 ]; then
-  echo "GeoIP MMDB 数据库更新失败，请检查日志。"
-  exit 1
-fi
-echo "GeoIP MMDB 数据库更新完成！"
-
-# 开始更新 GeoSite 数据库
-echo "开始更新 GeoSite 数据库..."
-/usr/share/openclash/openclash_geosite.sh
-if [ $? -ne 0 ]; then
-  echo "GeoSite 数据库更新失败，请检查日志。"
-  exit 1
-fi
-echo "GeoSite 数据库更新完成！"
-
-# 开始更新 GeoASN 数据库
-echo "开始更新 GeoASN 数据库..."
-/usr/share/openclash/openclash_geoasn.sh
-if [ $? -ne 0 ]; then
-  echo "GeoASN 数据库更新失败，请检查日志。"
-  exit 1
-fi
-echo "GeoASN 数据库更新完成！"
-
-# 开始更新大陆白名单
-echo "开始更新大陆白名单..."
-/usr/share/openclash/openclash_chnroute.sh
-if [ $? -ne 0 ]; then
-  echo "大陆白名单更新失败，请检查日志。"
-  exit 1
-fi
-echo "大陆白名单更新完成！"
-
-# 开始更新订阅
-echo "正在更新订阅..."
-/usr/share/openclash/openclash.sh
-if [ $? -ne 0 ]; then
-  echo "订阅更新失败，请检查日志。"
-  exit 1
-fi
-echo "订阅更新完成！"
 
 sleep 3
 echo "启动 OpenClash ..."

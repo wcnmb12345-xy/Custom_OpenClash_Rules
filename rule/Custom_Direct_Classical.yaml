@@ -1,7 +1,7 @@
 # Generated from rule/Custom_Direct.list
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # SOURCE: https://github.com/Aethersailor/Custom_OpenClash_Rules/blob/main/rule/Custom_Direct.list
-# TOTAL: 297
+# TOTAL: 309
 
 payload:
   - DOMAIN-KEYWORD,m-team
@@ -22,6 +22,7 @@ payload:
   - DOMAIN-SUFFIX,6v520.net
   - DOMAIN-SUFFIX,737698.xyz
   - DOMAIN-SUFFIX,7sef.com
+  - DOMAIN-SUFFIX,86656.net
   - DOMAIN-SUFFIX,900cha.com
   - DOMAIN-SUFFIX,985hezi.com
   - DOMAIN-SUFFIX,998tool.com
@@ -91,9 +92,12 @@ payload:
   - DOMAIN-SUFFIX,frp-ski.com
   - DOMAIN-SUFFIX,fssbcc.top
   - DOMAIN-SUFFIX,fsytss.com
+  - DOMAIN-SUFFIX,ft07.com
+  - DOMAIN-SUFFIX,fzvcolco.com
   - DOMAIN-SUFFIX,fzwqq.com
   - DOMAIN-SUFFIX,gaishitongshu.com
   - DOMAIN-SUFFIX,game.maj-soul.com
+  - DOMAIN-SUFFIX,gangtise.com
   - DOMAIN-SUFFIX,gaojiua.com
   - DOMAIN-SUFFIX,gdcucc.v1.mk
   - DOMAIN-SUFFIX,geektool.top
@@ -120,6 +124,7 @@ payload:
   - DOMAIN-SUFFIX,gmya.net
   - DOMAIN-SUFFIX,goka.top
   - DOMAIN-SUFFIX,googoc.com
+  - DOMAIN-SUFFIX,gootho.com
   - DOMAIN-SUFFIX,gseen.com
   - DOMAIN-SUFFIX,gsgltz.com
   - DOMAIN-SUFFIX,gsjkjt.com
@@ -128,6 +133,7 @@ payload:
   - DOMAIN-SUFFIX,gxnnjidingkeji.top
   - DOMAIN-SUFFIX,gzybao.com
   - DOMAIN-SUFFIX,halvie.com
+  - DOMAIN-SUFFIX,haoxueche.com
   - DOMAIN-SUFFIX,hbcof.com
   - DOMAIN-SUFFIX,hbctic.com
   - DOMAIN-SUFFIX,hexiny.com
@@ -142,6 +148,7 @@ payload:
   - DOMAIN-SUFFIX,hub.xdark.top
   - DOMAIN-SUFFIX,huikao8.com
   - DOMAIN-SUFFIX,hwbim.com
+  - DOMAIN-SUFFIX,hzlawyer.net
   - DOMAIN-SUFFIX,icvcs.com
   - DOMAIN-SUFFIX,idsduf.com
   - DOMAIN-SUFFIX,ifconfig.co
@@ -227,12 +234,14 @@ payload:
   - DOMAIN-SUFFIX,registry.dockermirror.com
   - DOMAIN-SUFFIX,rewards.bing.com
   - DOMAIN-SUFFIX,rsfcxq.com
+  - DOMAIN-SUFFIX,saduck.top
   - DOMAIN-SUFFIX,sanligu.top
   - DOMAIN-SUFFIX,sapphiretech.com
   - DOMAIN-SUFFIX,scbaijia.com
   - DOMAIN-SUFFIX,seaflysoft.com
   - DOMAIN-SUFFIX,seedpace.com
   - DOMAIN-SUFFIX,sgtv.ii00.cc
+  - DOMAIN-SUFFIX,shineacc.com
   - DOMAIN-SUFFIX,shuqiandiqiu.com
   - DOMAIN-SUFFIX,sixloy428.top
   - DOMAIN-SUFFIX,sksight.com
@@ -252,6 +261,7 @@ payload:
   - DOMAIN-SUFFIX,tcy365.net
   - DOMAIN-SUFFIX,thinkerride.com
   - DOMAIN-SUFFIX,tool56.com
+  - DOMAIN-SUFFIX,tozi-cn.top
   - DOMAIN-SUFFIX,tumukaoyan.com
   - DOMAIN-SUFFIX,tuxing.art
   - DOMAIN-SUFFIX,u-carloan.com
@@ -277,6 +287,7 @@ payload:
   - DOMAIN-SUFFIX,xdtool.com
   - DOMAIN-SUFFIX,xiankabao.com
   - DOMAIN-SUFFIX,xiaochuanyun.com
+  - DOMAIN-SUFFIX,xinghaiwaimai.com
   - DOMAIN-SUFFIX,xixih.cc
   - DOMAIN-SUFFIX,xn--4kq62z5rby2qupq9ub.top
   - DOMAIN-SUFFIX,xopenbeta.com
@@ -291,6 +302,7 @@ payload:
   - DOMAIN-SUFFIX,z6e.com
   - DOMAIN-SUFFIX,zctnet.top
   - DOMAIN-SUFFIX,zeekrline.com
+  - DOMAIN-SUFFIX,zhi10.com
   - DOMAIN-SUFFIX,zhixingyunke.com
   - DOMAIN-SUFFIX,zhongancloud.com
   - DOMAIN-SUFFIX,zjxhedu.com
